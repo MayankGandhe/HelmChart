@@ -7,5 +7,5 @@ metadata:
 data:
   # file-like keys
   config: |-
-{{ .Files.Get "config" | indent 4 }}
+{{ .Files.Get .Values.configmap.fileName | indent 4 }}
 {{- end }}
